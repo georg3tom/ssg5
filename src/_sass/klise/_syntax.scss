@@ -1,0 +1,182 @@
+// Code
+code {
+  font-family: $mono-family;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "calt" 1;
+  font-variant-ligatures: normal;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: inherit;
+
+  &.highlighter-rouge {
+    padding: 1px 3px;
+    position: relative;
+    top: -1px;
+    background-color: #f6f6f6;
+    border-radius: 2px;
+  }
+}
+
+// Codeblock Theme
+pre {
+  margin: 0 -27px;
+  @include media-query($on-mobile) {
+    margin: 0 calc(51% - 51vw);
+    padding-left: 20px;
+  }
+  border-radius: 2px;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+
+  > code {
+    width: 100%;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    display: block;
+    border: 0;
+  }
+}
+
+table td {
+  padding: 5px;
+}
+
+table pre {
+  margin: 0;
+}
+
+
+pre {
+  color: #fbf1c7;
+  background-color: #1a1b21;
+}
+
+.language-err {
+  color: #fb4934;
+  background-color: #1a1b21;
+  font-weight: bold;
+}
+
+.language-c,
+.language-cd,
+.language-cm,
+.language-c1,
+.language-cs {
+  color: #928374;
+  font-style: italic;
+}
+
+.language-cp {
+  color: #8ec07c;
+}
+
+.language-nt {
+  color: #fb4934;
+}
+
+.language-o,
+.language-ow {
+  color: #fbf1c7;
+}
+
+.language-python,
+.language-py {
+  color: #fbf1c7;
+}
+
+.language-gi {
+  color: #b8bb26;
+  background-color: #282828;
+}
+
+.language-gd {
+  color: #fb4934;
+  background-color: #282828;
+}
+
+.language-gh {
+  color: #b8bb26;
+  font-weight: bold;
+}
+
+.language-k,
+.language-kn,
+.language-kp,
+.language-kr,
+.language-kv {
+  color: #fb4934;
+}
+
+.language-kc {
+  color: #d3869b;
+}
+
+.language-kt {
+  color: #fabd2f;
+}
+
+.language-kd {
+  color: #fe8019;
+}
+
+.language-s,
+.language-sb,
+.language-sc,
+.language-sd,
+.language-s2,
+.language-sh,
+.language-sx,
+.language-s1 {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.language-si {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.language-sr {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.language-se {
+  color: #fe8019;
+}
+
+.language-nn {
+  color: #8ec07c;
+}
+
+.language-nc {
+  color: #8ec07c;
+}
+
+.language-no {
+  color: #d3869b;
+}
+
+.language-na {
+  color: #b8bb26;
+}
+
+.language-m,
+.language-mf,
+.language-mh,
+.language-mi,
+.language-il,
+.language-mo,
+.language-mb,
+.language-mx {
+  color: #d3869b;
+}
+
+.language-ss {
+  color: #83a598;
+}
